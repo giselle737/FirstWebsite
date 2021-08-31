@@ -1,0 +1,25 @@
+/* =============================================
+	HTML5 structural elements
+   =============================================
+*/
+
+article, aside, details, dl, figcaption, figure, footer, header, hgroup, main, nav, section {
+	display: block;
+}
+
+/* =============================================
+	Default colors, margins and sizing
+   =============================================
+*/
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.4;
+}
+

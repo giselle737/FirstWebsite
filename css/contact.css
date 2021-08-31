@@ -1,0 +1,126 @@
+/*THIS IS FOR THE NAV BAR*/
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/Home.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: Century Gothic;
+	background-color: #000;
+}
+
+
+header{
+	height: 100vh;
+}
+
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top: 43px;
+	margin-right: 15px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transition;
+	transition: 0.6x ease;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a {
+	background-color: #fff;
+	color: #000;
+}
+.logo img{
+	width: 30px;
+	margin-bottom: -8px;
+	margin-right: 15px;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+/*THIS CONNTENT IS FOR THE FORM*/
+.container{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+h1{
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+}
+
+input[type="text"], textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #434343;
+	border-radius: 4px solid #434343;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	background-color: #C0C0C0;
+	box-sizing: border-box;
+	color: #434343;
+}
+
+input[type="text"]:focus{
+	background-color: #C0C0C0;
+	box-shadow: 0 0 0 2px;
+	transition: 0.6s all;
+}
+
+textarea:focus{
+	background-color: #C0C0C0;
+	box-shadow: 0 0 0 2px;
+	transition: 0.6s all;
+}
+
+label{
+	color: #fff;
+}
+
+input[type="submit"]{
+	background-color: #C0C0C0;
+	color: #000;
+	padding: 12px 48px;
+	border-radius: 4px solid #fff;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background-color: #fff;
+	box-shadow: 0 0 0 2px;
+	transition: 0.6s all;
+}
+
+
+/*THIS IS FOR THE SHORT PARAGRAPH*/
+.article{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.article h1{
+	color: #fff;
+}
+
+.article p{
+	color: #C0C0C0;
+}

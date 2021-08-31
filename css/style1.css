@@ -1,0 +1,276 @@
+/*Default settings*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+/*Sets the background and font for the pages*/
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/Home.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: Century Gothic;
+	background-color: #000;
+}
+
+/*The below code formats the Nav bar*/
+header{
+	height: 100vh;
+}
+
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top: 30px;
+	margin-right: 15px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transition;
+	transition: 0.6x ease;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a {
+	background-color: #fff;
+	color: #000;
+}
+
+.logo img{
+	width: 30px;
+	margin-bottom: -8px;
+	margin-right: 15px;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+/*Formats the title of the page if applicable*/
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.title h1{
+	color: #fff;
+	font-size: 90px;
+}
+
+/*Formats the article class to the center of the page*/
+.article{
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.article h1{
+	color: #fff;
+}
+
+.article p1{
+	color: #C0C0C0;
+}
+
+.article_sug{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	align-content: center;
+}
+
+.article_sug h1{
+	color: #fff;
+}
+
+.article_sug p{
+	color: #C0C0C0;
+}
+
+/*These classes are from the gallery page*/
+.img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.img_img{
+  display: block;
+  width: 500px;
+  height: 450px;
+  padding: 5px;
+  transition: 0.6s; 
+}
+
+.img_overlay{
+  position: absolute;
+  top: 1.15%;
+  left: 1.15%;
+  width: 500px;
+  height: 450px;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: Century Gothic;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.img_overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.img_overlay--primary {
+    background: #000
+    opacity: 25%;
+}
+
+.img_overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.img_overlay:hover {
+    opacity: 1;
+}
+
+.img_overlay:hover > * {
+    transform: translateY(0);
+}
+
+.img_title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.img_description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+
+/*The following classes are for formatting the table*/
+.content-table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.content-table thead tr {
+  background-color: #000/*#009879*/;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+.content-table tbody{
+	background-color: #C0C0C0;
+}
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #C0C0C0;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #000;
+}
+
+
+/*THIS CONNTENT IS FOR THE FORM*/
+.container{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+h1{
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+}
+
+input[type="text"], textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #434343;
+	border-radius: 4px solid #434343;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	background-color: #C0C0C0;
+	box-sizing: border-box;
+	color: #434343;
+}
+
+input[type="text"]:focus{
+	background-color: #C0C0C0;
+	box-shadow: 0 0 0 2px;
+	transition: 0.6s all;
+}
+
+textarea:focus{
+	background-color: #C0C0C0;
+	box-shadow: 0 0 0 2px;
+	transition: 0.6s all;
+}
+
+label{
+	color: #fff;
+}
+
+input[type="submit"]{
+	background-color: #C0C0C0;
+	color: #000;
+	padding: 12px 48px;
+	border-radius: 4px solid #fff;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background-color: #fff;
+	box-shadow: 0 0 0 2px;
+	transition: 0.6s all;
+}
